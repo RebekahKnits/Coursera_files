@@ -1,6 +1,5 @@
 # filename: run_analysis.R
 library(tidyverse)
-library(plyr); library(dplyr)
 
 #Extract the data
 
@@ -25,7 +24,7 @@ sub_data <- rbind(test_sub, train_sub)
 
 # 2. Extract only the measurements on the mean and standard deviation for each measurement
 
-mean_std_features_indexes <- grep("mean\\(\\)-[XYZ]$|std\\(\\)-[XYZ]$", features$V2) # identifies column names that might have mean() or std() 
+mean_std_features_indexes <- grep("mean\\(\\)-[XYZ]$|std\\(\\)(-[XYZ])?", features$V2)  # identifies column names that might have mean() or std() 
 X_data <- X_data[, mean_std_features_indexes] # selecting just the columns indexed from the X data
 
 # 3. use descriptive activity names to name the activities in the data set
