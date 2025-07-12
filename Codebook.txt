@@ -1,0 +1,70 @@
+Codebook
+
+This data is all a subset of the UCI HAR Dataset. 
+
+The list of columns is as follows:
+
+All data had to be pulled from one of 6 data sets: and X set of test and train data which was the number coded data, a Y set of test and train data with headers for each column, and a test and train subject identifier data set.
+
+activity - Text identification of what activity is being summarized. Each activity text identifier had to be decoded from the numeric encoding on in the X data set.
+subjectID - Number code for the subject in question
+
+The following are all averages of the activity/subject pair data for that subject pair. Each number had to be converted to a number then, grouped then averaged. Feature names have been altered slightly. I expanded the t and f notes to their full Time and Frequency. I also removed the "()" as they were special characters that cause problems for some analysis.
+-----
+Time_BodyAcc-mean-X
+Time_BodyAcc-mean-Y
+Time_BodyAcc-mean-Z
+Time_BodyAcc-std-X
+Time_BodyAcc-std-Y
+Time_BodyAcc-std-Z
+Time_GravityAcc-mean-X
+Time_GravityAcc-mean-Y
+Time_GravityAcc-mean-Z
+Time_GravityAcc-std-X
+Time_GravityAcc-std-Y
+Time_GravityAcc-std-Z
+Time_BodyAccJerk-mean-X
+Time_BodyAccJerk-mean-Y
+Time_BodyAccJerk-mean-Z
+Time_BodyAccJerk-std-X
+Time_BodyAccJerk-std-Y
+Time_BodyAccJerk-std-Z
+Time_BodyGyro-mean-X
+Time_BodyGyro-mean-Y
+Time_BodyGyro-mean-Z
+Time_BodyGyro-std-X
+Time_BodyGyro-std-Y
+Time_BodyGyro-std-Z
+Time_BodyGyroJerk-mean-X
+Time_BodyGyroJerk-mean-Y
+Time_BodyGyroJerk-mean-Z
+Time_BodyGyroJerk-std-X
+Time_BodyGyroJerk-std-Y
+Time_BodyGyroJerk-std-Z
+Time_BodyAccMag-std
+Time_GravityAccMag-std
+Time_BodyAccJerkMag-std
+Time_BodyGyroMag-std
+Time_BodyGyroJerkMag-std
+Frequency_BodyAcc-mean-X
+Frequency_BodyAcc-mean-Y
+Frequency_BodyAcc-mean-Z
+Frequency_BodyAcc-std-X
+Frequency_BodyAcc-std-Y
+Frequency_BodyAcc-std-Z
+Frequency_BodyAccJerk-mean-X
+Frequency_BodyAccJerk-mean-Y
+Frequency_BodyAccJerk-mean-Z
+Frequency_BodyAccJerk-std-X
+Frequency_BodyAccJerk-std-Y
+Frequency_BodyAccJerk-std-Z
+Frequency_BodyGyro-mean-X
+Frequency_BodyGyro-mean-Y
+Frequency_BodyGyro-mean-Z
+Frequency_BodyGyro-std-X
+Frequency_BodyGyro-std-Y
+Frequency_BodyGyro-std-Z
+Frequency_BodyAccMag-std
+Frequency_BodyBodyAccJerkMag-std
+Frequency_BodyBodyGyroMag-std
+Frequency_BodyBodyGyroJerkMag-std
