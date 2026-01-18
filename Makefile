@@ -1,9 +1,10 @@
 install:
 	pip install --upgrade pip &&\
 		pip install -r requirements.txt
+	python -m textblob.download_corpora # for the text blob stuff
 
 test:
-	python -m pytest -v test_hello.py
+	python -m pytest -v test_hello.py --cov=wikiphrases --cov=nlplogic test_corenlp.py
 
 format:
 	black *.py

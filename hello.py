@@ -7,8 +7,8 @@ def more_goodbye():
 
 
 # nonsense code
-#var = 1
-#var = var
+# var = 1
+# var = var
 
 # bad syntxt
 # foo =
